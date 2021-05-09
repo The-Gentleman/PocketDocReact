@@ -4,7 +4,7 @@ class CreatePatients < ActiveRecord::Migration[6.0]
       t.string :name
       t.string :symptoms
       t.string :diagnosis
-      t.description :home_exercise_plan
+      t.text :home_exercise_plan
       t.integer :user_id
 
       t.timestamps
