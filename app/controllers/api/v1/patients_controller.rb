@@ -4,8 +4,8 @@ class Api::V1::PatientsController < ApplicationController
   # GET /patients
   def index
     @patients = Patient.all
-
-    render json: @patients
+    patient_json = PatientSerializer.new(@patients).serialized_json
+    render json: patient_json
   end
 
   # GET /patients/1
