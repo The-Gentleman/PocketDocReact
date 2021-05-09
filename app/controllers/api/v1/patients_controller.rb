@@ -10,7 +10,9 @@ class Api::V1::PatientsController < ApplicationController
 
   # GET /patients/1
   def show
-    render json: @patient
+    @patient = Patient.find(params[:id])
+    patient_json = PatientSerializer.new(@patient).serialized_json
+    render json: patient_json
   end
 
   # POST /patients
