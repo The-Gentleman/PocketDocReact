@@ -12,5 +12,5 @@ Your application should have some minimal styling: feel free to stick to a frame
 5/10 to do:
 - Create react app [X]
 - Create html render page [X]
-- Create Welcome component []
+- Create Welcome component [X]
 - Start Patient component []
