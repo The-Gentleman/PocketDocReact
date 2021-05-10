@@ -1,15 +1,22 @@
 import React, { Component } from 'react'
-            // Desired behavior:
-            // render patient names onto dom
 
 export default class PatientList extends Component {
+
+    constructor(){
+        super();
+        this.state = {
+            patientNames: ''
+        };
+    }
 
     componentDidMount() {
         fetch('http://localhost:3001/api/v1/patients')
             .then(response => response.json())
             .then(patients => {
-                patients.data.map(patient => {
-                    console.log(patient.attributes.name)
+                this.setState({
+                    patientNames: patients.data.map(patient => {
+                        return patient.attributes.name
+                    })
                 })
             })
     }
@@ -17,7 +24,8 @@ export default class PatientList extends Component {
     render() {
         return (
             <div className="patient-names">
-                <p>Your patients</p>
+                <h3>Your patients:</h3>
+                <ul>{this.state.patientNames}</ul>
             </div>
         )
     }
