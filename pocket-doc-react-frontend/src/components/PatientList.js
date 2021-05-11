@@ -1,32 +1,29 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
-export default class PatientList extends Component {
+class PatientList extends Component {
 
-    constructor(){
-        super();
-        this.state = {
-            patientNames: ''
-        };
+    constructor(props){
+        super(props);
     }
 
     componentDidMount() {
-        fetch('http://localhost:3001/api/v1/patients')
-            .then(response => response.json())
-            .then(patients => {
-                this.setState({
-                    patientNames: patients.data.map(patient => {
-                        return patient.attributes.name
-                    })
-                })
-            })
     }
 
     render() {
         return (
             <div className="patient-names">
                 <h3>Your patients:</h3>
-                <ul>{this.state.patientNames}</ul>
             </div>
         )
     }
 }
+// mapStateToProps: exactly which slice of the state 
+// we want to provide to our component. 
+const mapStateToProps = (state) => {
+    return {patientNames: state.patientNames}
+}
+
+export default connect(mapStateToProps)(PatientList);
+
+
