@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header.js'
 import PatientList from './components/PatientList.js'
@@ -8,7 +7,7 @@ function App() {
     <div className="App">
       {/* 1 OF 5 */}
       <Header />
-      <PatientList />
+      <PatientList patientName="" />
     </div>
   );
 }
