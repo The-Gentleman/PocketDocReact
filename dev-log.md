@@ -13,4 +13,10 @@ Your application should have some minimal styling: feel free to stick to a frame
 - Create react app [X]
 - Create html render page [X]
 - Create Welcome component [X]
-- Start Patient component []
+- Start Patient component [X]
+
+5/11 to do:
+- Pass in props to PatientList component []
+- Create patient dispatch with fetch request [] 
+- Create patient action creator [] 
+- render that on the dom via PatientList []
