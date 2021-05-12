@@ -16,7 +16,14 @@ Your application should have some minimal styling: feel free to stick to a frame
 - Start Patient component [X]
 
 5/11 to do:
-- Pass in props to PatientList component []
-- Create patient dispatch with fetch request [] 
-- Create patient action creator [] 
+- Pass in props to PatientList component [X]
+- Create patient dispatch with fetch request [X] 
+- Create patient action creator [X] 
+
+
+5/12 to do: 
+- Call the dispatched function in my componentDidMount []
 - render that on the dom via PatientList []
+- make the names clickable links []
+- get started on routes []
+
