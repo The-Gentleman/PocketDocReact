@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       {/* 1 OF 5 */}
       <Header />
+      {/* 2 OF 5 */}
       <PatientList patientName="" />
     </div>
   );
