@@ -22,8 +22,13 @@ Your application should have some minimal styling: feel free to stick to a frame
 
 
 5/12 to do: 
-- Call the dispatched function in my componentDidMount []
+- Call the dispatched function in my componentDidMount [X]
 - render that on the dom via PatientList []
+- make the names clickable links []
+- get started on routes []
+
+5/13
+- render that on the dom via PatientList [X] <----WOOOO!
 - make the names clickable links []
 - get started on routes []
 
