@@ -1,15 +1,19 @@
 import './App.css';
 import Header from './components/Header.js'
 import PatientList from './components/PatientList.js'
+import { Switch, Route } from 'react-router-dom' 
 
 function App() {
   return (
-    <div className="App">
-      {/* 1 OF 5 */}
-      <Header />
-      {/* 2 OF 5 */}
-      <PatientList patientName="" />
-    </div>
+   
+      <div className="App">
+        <Switch>
+          <Route exact path="/patients" component={PatientList} />
+          <Header />
+          <PatientList patientName="" />
+        </Switch>
+      </div>
+    
   );
 }
 
