@@ -9,19 +9,22 @@ Your Rails API should handle the data persistence with a database. You should be
 Your client-side application should handle the display of data with minimal data manipulation [X]
 Your application should have some minimal styling: feel free to stick to a framework (like react-bootstrap), but if you want to write (additional) CSS yourself, go for it! []
 
-5/10 to do:
+
+
+DAILY GOALS
+5/10 
 - Create react app [X]
 - Create html render page [X]
 - Create Welcome component [X]
 - Start Patient component [X]
 
-5/11 to do:
+5/11 
 - Pass in props to PatientList component [X]
 - Create patient dispatch with fetch request [X] 
 - Create patient action creator [X] 
 
 
-5/12 to do: 
+5/12 
 - Call the dispatched function in my componentDidMount [X]
 - render that on the dom via PatientList []
 - make the names clickable links []
@@ -33,8 +36,13 @@ Your application should have some minimal styling: feel free to stick to a frame
 - get started on routes [X]
 
 5/15
-- make the names clickable links []
+- make the names clickable links [X]
 - when clicking on name, route to patient show page [] 
+- give options to add a home exercise plan []
+
+5/17 
+- when clicking on name, route to patient show page [X]
+- find a way to access the dispatch function in PatientCard component [] 
 - give options to add a home exercise plan []
 
 
