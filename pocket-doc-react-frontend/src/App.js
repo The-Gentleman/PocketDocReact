@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/Header.js'
 import PatientList from './components/PatientList.js'
+import PatientCard from './components/PatientCard.js'
 import NoRoute from './components/NoRoute.js'
 import { Switch, Route, Link } from 'react-router-dom' 
 
@@ -14,6 +15,7 @@ function App() {
         <Switch>
           <Route exact path="/home" component={Header} />
           <Route exact path="/patients" component={PatientList} />
+          <Route exact path="/patients/:id" component={PatientCard} />
           <Route component={NoRoute}/>
           <Header />
           <PatientList patientName="" />
