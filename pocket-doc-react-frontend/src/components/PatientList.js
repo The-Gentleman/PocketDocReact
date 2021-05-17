@@ -8,9 +8,7 @@ class PatientList extends Component {
     componentDidMount() {
         this.props.dispatchFetchPatients()
     }
-    // now I need to make these names:
-    //  1) Clikable links --> Gonna need a click listener
-    //  2) Routed somewhere
+
     render() {
         return (
             <div className="patient-names">
@@ -36,7 +34,5 @@ const mapDispatchToProps = dispatch => {
             dispatchFetchPatients: () => dispatch(fetchPatients())
         }
 }
-
-
 export default connect(mapStateToProps, mapDispatchToProps)(PatientList);
 
