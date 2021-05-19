@@ -9,3 +9,11 @@ export default class PatientCard extends Component {
         )
     }
 }
+
+// put redux logic in container component
+    // if no patients in store, props patients = undefined
+    // if no patient dispatchFetchPatient
+// pass prop into PatientCard
+
+
+
