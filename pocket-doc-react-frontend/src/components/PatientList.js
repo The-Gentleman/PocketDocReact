@@ -4,7 +4,6 @@ import { fetchPatients  } from '../actions/patients'
 import { Link } from 'react-router-dom'
 
 class PatientList extends Component {
-
     componentDidMount() {
         this.props.dispatchFetchPatients()
     }
