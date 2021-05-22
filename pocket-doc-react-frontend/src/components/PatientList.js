@@ -4,6 +4,7 @@ import { fetchPatients  } from '../actions/patients'
 import { Link } from 'react-router-dom'
 
 class PatientList extends Component {
+
     componentDidMount() {
         this.props.dispatchFetchPatients()
     }
@@ -12,11 +13,7 @@ class PatientList extends Component {
         return (
             <div className="patient-names">
                 <h3>Your patients:</h3>
-                {this.props.patients.map(patient => {
-                    return <ol>
-                        <Link to={`patients/${patient.id}`}>{patient.name}</Link>
-                        </ol>
-                    })}
+                {this.props.patients.map(patient => {return <ol><Link to={`patients/${patient.id}`}>{patient.name}</Link></ol>})}
             </div>
         )
     }
