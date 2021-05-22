@@ -1,12 +1,9 @@
 import React, { Component } from 'react'
 
-export default class PatientCard extends Component {
-    render() {
-        return (
-            <div>
-                <h1>Patient info here</h1>
-            </div>
-        )
-    }
+export default function PatientCard() {
+    return (
+        <div>
+            Whats the point of this component?
+        </div>
+    )
 }
-
