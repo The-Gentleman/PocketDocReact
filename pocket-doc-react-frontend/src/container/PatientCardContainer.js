@@ -1,16 +1,45 @@
 import React, { Component } from 'react'
 import PatientCard from '../components/PatientCard.js'
+import { connect } from 'react-redux'
+import { fetchPatients  } from '../actions/patients'
 
-export default class PatientCardContainer extends Component {
-    render() {
+ class PatientCardContainer extends Component {
+
+    componentDidMount() {
+        this.props.dispatchFetchPatients()
+    }
+
+     render() {
         return (
             <div>
-                Poop
+                -----------------------------------------
             </div>
         )
     }
 }
 
+const mapStateToProps = (state, ownProps) => {
+    debugger
+}
 
-// Mapstatetoprops
-// Mapdispatchtoprops
+const mapDispatchToProps = dispatch => {
+    return {
+        dispatchFetchPatients: () => dispatch(fetchPatients())
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(PatientCardContainer);
+
+// put redux logic in container component
+    // if no patients in store, props patients = undefined
+    // if no patient dispatchFetchPatient
+// pass prop into PatientCard
+
+// ***dispatchFetchPatients !== dispatch(fetchPatients())
+
+
+// match prop => patientID
+
+
+
+
