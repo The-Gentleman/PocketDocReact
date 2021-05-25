@@ -6,14 +6,18 @@ import { fetchPatients  } from '../actions/patients'
  class PatientCardContainer extends Component {
 
     componentDidMount() {
-        this.props.dispatchFetchPatients()
+        if (!this.props.patient){
+            this.props.dispatchFetchPatients() 
+        }
     }
 
      render() {
+         if (!this.props.patient){
+             return 'LOADING'
+         }
         return (
             <div>
-               <h2>Patient Name:</h2>{this.props.patientName}
-               <h2>Patient Symptoms:</h2>{this.props.patientSymptoms}
+               <h2>Patient Name:</h2>{this.props.patient.name}
                <h2>Maaaan... i dont even know:</h2>{<PatientCard />}
             </div>
         )
@@ -21,19 +25,12 @@ import { fetchPatients  } from '../actions/patients'
 }
 
 const mapStateToProps = (state, ownProps) => {
+    // debugger
     return { 
-        patientName: state.patients.find(patient => {
-        if (ownProps.match.params.id == patient.id) {
-            return patient  
-           }
-       }).name,
-       patientSymptoms: state.patients.find(patient => {
-        if (ownProps.match.params.id == patient.id) {
-            return patient 
-           }
-       }).symptoms
+        patient: state.patients.find(patient => ownProps.match.params.id == patient.id)
+       }
     }
-}
+
 
 const mapDispatchToProps = dispatch => {
     return {
