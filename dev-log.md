@@ -1,10 +1,10 @@
 Use the create-react-app generator to start your project. [X] 
 Your app should have one HTML page to render your react-redux application [X]
-There should be 5 stateless components []
+There should be 5 stateless components [X]
 There should be 3 routes [X]
-The Application must make use of react-router and proper RESTful routing (should you choose to use react-router v3 please refer to the appropriate docs; docs for v4 can be found here) []
+The Application must make use of react-router and proper RESTful routing (should you choose to use react-router v3 please refer to the appropriate docs; docs for v4 can be found here) [X]
 Use Redux middleware to respond to and modify state change [X]
-Make use of async actions and redux-thunk middleware to send data to and receive data from a server [X]
+Make use of async actions and redux-thunk middleware to send data to and receive data from a server []
 Your Rails API should handle the data persistence with a database. You should be using fetch() within your actions to GET and POST data from your API - do not use jQuery methods. [X]
 Your client-side application should handle the display of data with minimal data manipulation [X]
 Your application should have some minimal styling: feel free to stick to a framework (like react-bootstrap), but if you want to write (additional) CSS yourself, go for it! []
@@ -22,7 +22,6 @@ DAILY GOALS
 - Pass in props to PatientList component [X]
 - Create patient dispatch with fetch request [X] 
 - Create patient action creator [X] 
-
 
 5/12 
 - Call the dispatched function in my componentDidMount [X]
@@ -46,6 +45,7 @@ DAILY GOALS
 
 
 5/26
+- create seperate branch [X]
 - give options to add diagnosis []
 - give options to add a home exercise plan []
 
