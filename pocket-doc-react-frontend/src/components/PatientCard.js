@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 
-export default function PatientCard() {
+export default function PatientCard(props) {
     return (
         <div>
-            Whats the point of this component?
+            <h2>Patient Name:</h2>{props.patient.name}
+            <h2>Patient Symptoms:</h2>{props.patient.symptoms}
         </div>
     )
 }
