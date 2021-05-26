@@ -42,7 +42,11 @@ DAILY GOALS
 
 5/17 
 - when clicking on name, route to patient show page [X]
-- find a way to access the dispatch function in PatientCard component [] 
+- find a way to access the dispatch function in PatientCard component [X] 
+
+
+5/26
+- give options to add diagnosis []
 - give options to add a home exercise plan []
 
 
