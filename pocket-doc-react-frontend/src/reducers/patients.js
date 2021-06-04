@@ -22,9 +22,5 @@ export default (state = [], action) => {
 // payload is other required info. If adding, updating, etc.
 // it would be what its getting changed into.
 // type is address --- payload is contents
+// type is the department --- payload is the extension
 
-/*
-I want to add a diagnosis attribute to my patient.
-I need to create a patch fetch request action creator.
-I need to tell my reducer to return the update patient w/ diagnosis attribute.
-*/
