@@ -14,26 +14,23 @@ import { fetchPatients  } from '../actions/patients'
      render() {
          if (!this.props.patient){
              return 'LOADING'
-            }
+         }
             return (
                 <div>
-               <PatientCard patient = {this.props.patient}/>
-            </div>
+                    <PatientCard patient = {this.props.patient}/>
+                </div>
         )
     }
 }
 
 const mapStateToProps = (state, ownProps) => {
-    return { 
-        patient: state.patients.find(patient => ownProps.match.params.id == patient.id)
-    }
+    return {patient: state.patients.find(patient => ownProps.match.params.id == patient.id)}
 }
 
 const mapDispatchToProps = dispatch => {
-    return {
-        dispatchFetchPatients: () => dispatch(fetchPatients())
-    }
+    return {dispatchFetchPatients: () => dispatch(fetchPatients())}
 }
+
 export default connect(mapStateToProps, mapDispatchToProps)(PatientCardContainer);
 
 
