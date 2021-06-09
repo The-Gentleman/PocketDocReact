@@ -30,7 +30,6 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = dispatch => {
     return {dispatchFetchPatients: () => dispatch(fetchPatients())}
 }
-
 export default connect(mapStateToProps, mapDispatchToProps)(PatientCardContainer);
 
 

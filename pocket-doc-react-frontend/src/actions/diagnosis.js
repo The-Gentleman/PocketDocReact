@@ -10,8 +10,9 @@ export const addDiagnosis = (patient) => {
         })
         .then(response => response.json())
         .then(patientElement => {
-            return patientElement.data.attributes,
+            debugger
             dispatch({type: "ADD_DIAGNOSIS", payload: patientElement})
+            return patientElement.data.attributes
         })
     }
 }
