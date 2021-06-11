@@ -17,7 +17,7 @@ function App() {
           <Route exact path="/home" component={Header} />
           <Route exact path="/patients" component={PatientList} />
           <Route exact path="/patients/:id" component={PatientCardContainer} />
-          <Route exact path="/patients/:id/diagnosis" component={DiagnosisFormContainer} />
+          <Route exact path="/patients/:id" component={DiagnosisFormContainer} />
           <Route component={NoRoute}/>
           <Header />
           <PatientList />
