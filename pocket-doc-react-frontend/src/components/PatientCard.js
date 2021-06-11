@@ -8,7 +8,7 @@ export default function PatientCard(props) {
             <h2>Patient Symptoms:</h2>{props.patient.symptoms}
             <br></br>
             <br></br>
-            <DiagnosisFormContainer />
+            <DiagnosisFormContainer patient={props.patient} />
         </div>
     )
 }
