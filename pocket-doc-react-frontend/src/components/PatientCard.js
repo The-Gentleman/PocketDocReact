@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import DiagnosisFormContainer from '../container/DiagnosisFormContainer'
+import UpdatedPatientInfoContainer from '../container/UpdatedPatientInfoContainer'
 export default function PatientCard(props) {
 
     return (
@@ -8,7 +8,7 @@ export default function PatientCard(props) {
             <h2>Patient Symptoms:</h2>{props.patient.symptoms}
             <br></br>
             <br></br>
-            <DiagnosisFormContainer patient={props.patient} />
+            <UpdatedPatientInfoContainer patient={props.patient} />
         </div>
     )
 }
