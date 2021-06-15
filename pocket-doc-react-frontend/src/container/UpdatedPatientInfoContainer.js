@@ -26,20 +26,17 @@ class UpdatedPatientInfoContainer  extends Component {
                             <br></br>
                             <input type="text" name="diagnosis" value={this.state.diagnosis} onChange={this.handleChange}/>
                         </label>
-                        <input type="submit" value="Submit"/>
-                    </form>
-                    <br></br>
-                    {this.state.diagnosis}
                     <h2>Patient Home Exercise Plan:</h2>
-                    <form onSubmit={this.handleSubmit}>
                         <label>
                             <br></br>
                             <input type="text" name="home_exercise_plan" value={this.state.home_exercise_plan} onChange={this.handleChange}/>
                         </label>
+                        <br></br>
+                        <br></br>
+                        <br></br>
                         <input type="submit" value="Submit"/>
                     </form>
                     <br></br>
-                    {this.state.home_exercise_plan}
             </div>
         )
     }
