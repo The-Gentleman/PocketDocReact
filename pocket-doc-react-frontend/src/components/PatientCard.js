@@ -9,6 +9,10 @@ export default function PatientCard(props) {
             <br></br>
             <br></br>
             <UpdatedPatientInfoContainer patient={props.patient} />
+            {props.patient.diagnosis}
+            <br></br>
+            <br></br>
+            {props.patient.home_exercise_plan}
         </div>
     )
 }
