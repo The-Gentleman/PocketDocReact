@@ -38,6 +38,13 @@
 }
 
 .Welcome {
-  /* font-family: "Times New Roman", Times, serif; */
+  margin: auto;
   font-family: "COPPERPLATE", Fantasy, serif;
+  width: 50%;
+}
+
+.Nav{
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 10px;
+  float: left;
 }
