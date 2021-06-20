@@ -10,8 +10,8 @@ import { Switch, Route, Link } from 'react-router-dom'
 function App() {
   return (
       <div className="App">
-        <div>
-        <Link to="/home">Home</Link> | <Link to="/patients">Patients</Link>  
+        <div className="Nav">
+          <Link to="/home">Home</Link> | <Link to="/patients">Patients</Link>  
         </div>
         <Switch>
           <Route exact path="/home" component={Header} />
