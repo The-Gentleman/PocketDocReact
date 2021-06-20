@@ -11,7 +11,10 @@ function App() {
   return (
       <div className="App">
         <div className="Nav">
-          <Link to="/home">Home</Link> | <Link to="/patients">Patients</Link>  
+          <strong><Link to="/home">Home</Link> </strong>
+          <br></br>
+          <br></br>
+          <strong><Link to="/patients">Patients</Link> </strong> 
         </div>
         <Switch>
           <Route exact path="/home" component={Header} />
