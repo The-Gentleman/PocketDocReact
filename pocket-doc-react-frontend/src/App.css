@@ -37,14 +37,43 @@
   }
 }
 
+.Nav{
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 10px;
+  float: left;
+}
+
 .Welcome {
   margin: auto;
   font-family: "COPPERPLATE", Fantasy, serif;
   width: 50%;
 }
 
-.Nav{
-  font-family: "Times New Roman", Times, serif;
-  margin-left: 10px;
-  float: left;
+.patient-names{
+  margin: auto;
+  font-family: "COPPERPLATE", Fantasy, serif;
+  width: 50%;
+}
+
+.update-patient-form-container{
+  margin: auto;
+  font-family: "COPPERPLATE", Fantasy, serif;
+  width: 50%;
+}
+
+.PatientCard{
+  margin: auto;
+  font-family: "COPPERPLATE", Fantasy, serif;
+  width: 50%;
+}
+
+.NoRoute{
+  margin: auto;
+  font-family: "COPPERPLATE", Fantasy, serif;
+  width: 50%;
+}
+
+
+a:hover {
+  background-color: skyblue;
 }
