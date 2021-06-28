@@ -3,10 +3,10 @@ export default (state = [], action) => {
     switch (action.type) {
         case "FETCH_PATIENTS":
             return action.payload;
-            case "UPDATE_PATIENT":
-                return state.map(patient => {
-                    if (action.payload.id === patient.id){
-                        return action.payload;
+        case "UPDATE_PATIENT":
+            return state.map(patient => {
+                if (action.payload.id === patient.id){
+                    return action.payload;
                 } else {
                     return patient
                 }
