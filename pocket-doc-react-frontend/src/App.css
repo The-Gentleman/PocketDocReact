@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  color: maroon;
 }
 
 .App-logo {
@@ -41,36 +42,44 @@
   font-family: "Times New Roman", Times, serif;
   margin-left: 10px;
   float: left;
+
 }
 
 .Welcome {
   margin: auto;
   font-family: "COPPERPLATE", Fantasy, serif;
   width: 50%;
+
 }
 
 .patient-names{
   margin: auto;
   font-family: "COPPERPLATE", Fantasy, serif;
   width: 50%;
+
 }
 
 .update-patient-form-container{
   margin: auto;
+  text-align: center;
   font-family: "COPPERPLATE", Fantasy, serif;
   width: 50%;
+
 }
 
 .PatientCard{
+  text-align: center;
   margin: auto;
   font-family: "COPPERPLATE", Fantasy, serif;
   width: 50%;
+
 }
 
 .NoRoute{
   margin: auto;
   font-family: "COPPERPLATE", Fantasy, serif;
   width: 50%;
+
 }
 
 
