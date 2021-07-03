@@ -55,4 +55,4 @@ const mapDispatchToProps = dispatch => {
     return {dispatchUpdatePatient: (patient) => dispatch(updatePatient (patient))}
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(UpdatedPatientInfoContainer );
+export default connect(mapStateToProps, mapDispatchToProps)(UpdatedPatientInfoContainer);
