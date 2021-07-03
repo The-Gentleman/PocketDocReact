@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import LikeButton from './LikeButton.js'
 import { connect } from 'react-redux'
 import { fetchPatients  } from '../actions/patients'
 import { Link } from 'react-router-dom'
@@ -14,7 +15,7 @@ class PatientList extends Component {
             <div className="patient-names">
                 <h3>Your patients:</h3>
                 {this.props.patients.map(patient => 
-                    {return <ol><Link to={`patients/${patient.id}`}>{patient.name}</Link></ol>})
+                    {return <ol><Link to={`patients/${patient.id}`}>{patient.name}</Link><LikeButton /></ol>})
                 }
             </div>
         )
