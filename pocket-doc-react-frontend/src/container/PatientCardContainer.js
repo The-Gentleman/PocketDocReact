@@ -15,10 +15,10 @@ import { fetchPatients  } from '../actions/patients'
          if (!this.props.patient){
              return 'LOADING'
          }
-            return (
-                <div>
-                    <PatientCard patient = {this.props.patient}/>
-                </div>
+        return (
+        <div>
+            <PatientCard patient = {this.props.patient}/>
+        </div>
         )
     }
 }
