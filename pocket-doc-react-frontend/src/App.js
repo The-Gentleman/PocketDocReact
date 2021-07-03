@@ -4,6 +4,8 @@ import PatientList from './components/PatientList.js'
 import PatientCard from './components/PatientCard.js'
 import PatientCardContainer from './container/PatientCardContainer.js'
 import UpdatedPatientInfoContainer from './container/UpdatedPatientInfoContainer.js'
+import LikeButton from './components/LikeButton'
+
 import NoRoute from './components/NoRoute.js'
 import { Switch, Route, Link } from 'react-router-dom' 
 
@@ -27,6 +29,7 @@ function App() {
           <PatientCard />
           <PatientCardContainer />
           <UpdatedPatientInfoContainer />
+          <LikeButton />
         </Switch>
       </div>
   );
