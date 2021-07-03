@@ -23,6 +23,7 @@ function App() {
           <Route exact path="/patients" component={PatientList} />
           <Route exact path="/patients/:id" component={PatientCardContainer} />
           <Route exact path="/patients/:id/diagnosis" component={UpdatedPatientInfoContainer} />
+          <Route exact path="/like" component={LikeButton} />
           <Route component={NoRoute}/>
           <Header />
           <PatientList />

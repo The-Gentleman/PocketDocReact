@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { updatePatient  } from '../actions/updatePatient'
 
-class UpdatedPatientInfoContainer  extends Component {
+class UpdatedPatientInfoContainer extends Component {
 
     state = {
         diagnosis: '',
@@ -15,8 +15,11 @@ class UpdatedPatientInfoContainer  extends Component {
         this.props.dispatchUpdatePatient(updatedPatient)
     }
 
-    handleChange = (event) => {this.setState({[event.target.name]: event.target.value})}
-    
+    handleChange = (event) => {
+        this.setState({[event.target.name]: event.target.value})
+    }
+
+    // handleChange = (event) => {this.state.diagnosis = event.target.value}
     render() {
         return (
             <div className="update-patient-form-container">
