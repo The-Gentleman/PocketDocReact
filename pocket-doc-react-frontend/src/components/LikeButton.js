@@ -11,12 +11,13 @@ class LikeButton extends Component {
         this.setState((state) => {
             return {counter: state.counter + 1}
         })
-        debugger
     }
 
     render() {
         return (
-            <button onClick={this.handleClick}>Like</button>
+            <div>
+                <button onClick={this.handleClick}>Like</button>{ this.state.counter}
+            </div>
         )
     }
 }
