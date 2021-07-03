@@ -16,7 +16,7 @@ class LikeButton extends Component {
     render() {
         return (
             <div>
-                <button onClick={this.handleClick}>Like</button>{ this.state.counter}
+                <button onClick={this.handleClick}>Like</button> {this.state.counter}
             </div>
         )
     }
@@ -31,8 +31,7 @@ What I would need:
 - Create a new component[X]
     -within local state, I would need to have a counter attribute[X]
 - Create click handler[X]
-    - Within this click handler, I need counter to track (amount of times the button is clicked)[]
-- Call onChange next to the button within the return.[]
+    - Within this click handler, I need counter to track (amount of times the button is clicked)[X]
 */
 
 
