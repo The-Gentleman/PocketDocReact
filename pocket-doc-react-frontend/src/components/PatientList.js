@@ -53,11 +53,9 @@ class PatientList extends Component {
 
 
                 <h3>Your patients:</h3>
-                <ol>
-                {this.state.patients.map(patient => 
-                    {return <Link key={patient.id} to={`patients/${patient.id}`}>{patient.name}<br></br></Link>})
+                {this.props.patients.map(patient => 
+                    {return <ol><Link to={`patients/${patient.id}`}>{patient.name}</Link><LikeButton /></ol>})
                 }
-                </ol>
             </div>
         )
     }
