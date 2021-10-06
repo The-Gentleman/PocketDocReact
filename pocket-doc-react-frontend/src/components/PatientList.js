@@ -23,12 +23,6 @@ class PatientList extends Component {
         }
     }
 
-    handleClick = (event) => {
-        event.preventDefault();
-        let patientsObj = this.props.patients 
-        // patientsObj.sort((a,b) => a.name.localeCompare(b.name))
-    }
-
     updateSearch = () => {
         this.setState({
             patients: this.props.patients.filter((patient) => patient.name.includes(this.state.query))
